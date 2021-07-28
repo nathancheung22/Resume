@@ -17,6 +17,9 @@
 \renewcommand{\labelitemi}{\cdot}
 \setlist[itemize]{noitemsep, topsep=0pt}
 
+% Set custom href function for coloring
+\newcommand{\myHref}[2]{\href{#1}{\color{blue}{\underline{#2}}}}
+
 % Creates Heading function
 \newcommand{\createHeading}[1]{
     \vspace{1.25em}
@@ -44,11 +47,14 @@
 
 %%%%%%%%%%%%%%%%% HEADER %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent \huge{\textbf{Nathan Cheung}} \hfill \normalsize{\href{https://ncheung.ca}{ncheung.ca} | \href{mailto:nathancheung22@gmail.com}{nathancheung22@gmail.com}}
 
+\hfill \small{\href{mailto:nathancheung22@gmail.com}{nathancheung22@gmail.com} | \myHref{https://ncheung.ca}{ncheung.ca}} \\[-7pt]
+\noindent \huge{\textbf{Nathan Cheung}} \hfill \small{\myHref{https://github.com/nathancheung22}{github.com/nathancheung22} | \myHref{https://www.linkedin.com/in/nacheung22}{linkedin.com/in/nacheung22}}
 
 
 %%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\normalsize
 
 % EDUCATION
 \createHeading{EDUCATION}
@@ -87,14 +93,14 @@
 \createHeading{PROJECTS}
 \begin{addmargin}[.6em]{.6em}
     % Vidshare
-    \textbf{Youtube Video Synchronizer} \hfill \href{https://vidshare.ca}{https://vidshare.ca}
+    \textbf{Youtube Video Synchronizer} \hfill \myHref{https://vidshare.ca}{https://vidshare.ca}
     \begin{itemize}
         \item Developed a full-stack web application to watch YouTube videos with others synchronously
         \item Synchronized user activity using \textbf{websockets}, serving around 4400 monthly and 630 unique visitors
     \end{itemize}
     \vspace{1.25em}
     % Password Manager
-    \textbf{Password Manager} \hfill \href{https://git.io/JkKk6}{https://git.io/JkKk6}
+    \textbf{Password Manager} \hfill \myHref{https://git.io/JkKk6}{https://git.io/JkKk6}
     \begin{itemize}
         \item Created a \textbf{Python CLI} to store and retrieve passwords securely 
         \item Ensured security using \textbf{bcrypt's} hashing algorithm and \textbf{AES-128 encryption} for all data stored
@@ -102,22 +108,22 @@
     \end{itemize}
     \vspace{1.25em}
     % IBM Hackathon
-    \textbf{AnonBoard - 4\textsuperscript{th} at IBM Hackathon} \hfill \href{https://tiny.cc/dm56tz}{https://tiny.cc/dm56tz}
+    \textbf{AnonBoard - 4\textsuperscript{th} at IBM Hackathon} \hfill \myHref{https://tiny.cc/dm56tz}{https://tiny.cc/dm56tz}
     \begin{itemize}
         \item Developed an online job board that aims to remove racial bias in the hiring process
         \item Utilized \textbf{computer vision} and \textbf{natural language processing} to block discriminable personal information
-        \item Constructed \textbf{A.I.} endpoints using \textbf{IBM Cloud Functions} and web application with \textbf{Firebase} and \textbf{React}
+        % \item Constructed \textbf{A.I.} endpoints using \textbf{IBM Cloud Functions} and web application with \textbf{Firebase} and \textbf{React}
     \end{itemize}
     \vspace{1.25em}
     % % Kijiji scraper
-    \textbf{Automated Classifieds Bot} \hfill \href{https://git.io/JkKfz}{https://git.io/JkKfz}
+    \textbf{Automated Classifieds Bot} \hfill \myHref{https://git.io/JkKfz}{https://git.io/JkKfz}
     \begin{itemize}
         \item Created a \textbf{Python} bot to identify high-margin listings and notify user via email
         \item Automated and deployed bot using an \textbf{AWS EC2} instance, handling email notifications with \textbf{smtp}
     \end{itemize}
     \vspace{1.25em}
     % Hand written digits
-    \textbf{Handwritten Digits Classifier} \hfill \href{https://handwritten-digits-ai.netlify.app/}{https://tiny.cc/izm5tz}
+    \textbf{Handwritten Digits Classifier} \hfill \myHref{https://handwritten-digits-ai.netlify.app/}{https://tiny.cc/izm5tz}
     \begin{itemize}
         \item Created and trained a \textbf{neural network} in \textbf{Keras} to classify handwritten digits
         \item Designed a full-stack web application to visualize neuron layer with \textbf{Node.js, React,} and \textbf{Express.js} 
